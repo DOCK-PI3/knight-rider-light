@@ -3,12 +3,12 @@
   <formatVersion>7</formatVersion>
 <!-- Variables creadas y definidas por el usuario,pueden ser por ej: rutas,colores,imagenes,fuentes texto,tamaños,origenes en pantalla,ect -->
   <variables>
-    <baseColor>edebb4</baseColor>
+    <baseColor>ffffff</baseColor>
 	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
-	<ColorSeleccionMenu>282828</ColorSeleccionMenu>
-	<primaryColorMenu>c1efb2</primaryColorMenu>
+	<ColorSeleccionMenu>ffffff</ColorSeleccionMenu>
+	<primaryColorMenu>282828</primaryColorMenu>
 	<secundaryColorMenu>272720</secundaryColorMenu>
-	<ColordelSelectorMenu>c1efb2</ColordelSelectorMenu>
+	<ColordelSelectorMenu>a93629</ColordelSelectorMenu>
 	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
 	<pauseColorIconos>c1efb2</pauseColorIconos>
     <pauseColorTexto>ffdba2</pauseColorTexto>

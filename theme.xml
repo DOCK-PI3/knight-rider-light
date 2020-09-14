@@ -4,7 +4,7 @@ theme name:		knight-rider-light | /README.md /theme.xml /_arte/* /_arte/logos/* 
 version:		1.0 for batocera 5.26 o superior....
 author:			DOCK-PI3 "mabedeep"
 Fecha:			22-08-2020
-Material sacado del theme carbon original de batocera : 3 .png bottom.png,button.png,button_filled.png y un button.pdn
+Material sacado del theme carbon original de batocera : Directorio consoles, 3 .png bottom.png,button.png,button_filled.png y un button.pdn
 .....................................
  Hex Opacity Values
 
@@ -22,7 +22,7 @@ Opaque                                         Translucide                      
     <baseColor>8b0000</baseColor>
 	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
 	<ColorSeleccionMenu>e32934</ColorSeleccionMenu>
-	<primaryColorMenu>ffffff</primaryColorMenu>
+	<primaryColorMenu>282828</primaryColorMenu>
 	<secundaryColorMenu>d7d7d8</secundaryColorMenu>
 	<ColordelSelectorMenu>1c1c1c</ColordelSelectorMenu>
 	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
@@ -267,7 +267,7 @@ Opaque                                         Translucide                      
       <secondaryColor>${secondaryColorMenu}</secondaryColor>
       <fontPath>./_arte/knight-rider.TTF</fontPath>
       <fontSize>0.032</fontSize>
-      <pos>0.26 0.195</pos>
+      <pos>0.275 0.195</pos>
       <size>0.44 0.708</size>
 	  <horizontalMargin>0.01</horizontalMargin>
       <alignment>center</alignment>
@@ -403,7 +403,7 @@ Opaque                                         Translucide                      
       <size>0.09 0</size>
     </text>
     <text name="md_players">
-      <color>000000</color>
+      <color>${colorDeveloper}</color>
       <pos>0.842 0.78</pos>
       <size>0.2 0</size>
     </text>
@@ -413,7 +413,7 @@ Opaque                                         Translucide                      
       <size>0.2 0</size>
     </text>
     <datetime name="md_releasedate">
-    <color>000000</color>
+    <color>${colorDescriccion}</color>
       <pos>0.83 0.84</pos>
       <size>0 0.033</size>
     </datetime>
@@ -1338,6 +1338,130 @@ Opaque                                         Translucide                      
       <pos>0.9 0.895</pos>
       <size>0 0.033</size>
     </datetime>	
+  </customView>
+
+  <customView name="BackToThe80" inherits="grid" tinyScreen="false">
+	<text name="md_name" extra="true">
+      <color>ffffff</color>
+      <pos>0.585 0.085</pos>
+      <size>0.414 0.14</size>
+      <alignment>left</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+      <fontSize>0.08</fontSize>
+      <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+    </text>	
+    <image name="sub-background" extra="true">
+      <tile>true</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./_arte/1026.png</path>
+	  <color>cccccc8C</color>
+	  <colorEnd>60FFBF00</colorEnd>
+	  <gradientType>vertical</gradientType>
+	  <zIndex>15</zIndex>
+    </image>
+	<rating name="md_rating">
+      <pos>0.635 0.855</pos>
+      <size>0.1 0.048</size>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+	  <filledPath>./_arte/star_filled.png</filledPath>
+	  <unfilledPath>./_arte/star_unfilled.png</unfilledPath>
+    </rating>
+    <text name="md_lbl_players">
+      <pos>0.68 -0.05</pos>
+      <size>0.07 0</size>
+	  <color>EFEFFF</color>
+	  <fontSize>0.051</fontSize>
+    </text>
+    <text name="md_players">
+      <color>EFEFFF</color>
+      <pos>0.82 0.03</pos>
+      <size>0 0.05</size>
+	  <fontSize>0.051</fontSize>
+    </text>
+    <text name="md_lbl_releasedate">
+      <color>969696</color>
+      <pos>0.78 0.86</pos>
+      <size>0.2 0</size>
+    </text>
+    <datetime name="md_releasedate">
+    <color>EFEFFF</color>
+      <pos>0.89 0.86</pos>
+      <size>0 0.033</size>
+    </datetime>
+    <text name="md_description">
+      <pos>0.615 0.22</pos>
+      <size>0.385 0.165</size>    
+      <color>ffffff</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.031</fontSize>
+    </text>	
+	<video name="md_video">
+      <pos>0.802 0.628</pos>
+	  <size>0.32 0.436</size>
+	  <default>./_arte/bgv-sistemas/kitt-gift_2020.mp4</default> 
+      <!-- <maxSize>0.412 0.436</maxSize> -->
+      <origin>0.5 0.5</origin>
+      <delay>0.8</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
+    </video>	
+<!-- 	<image name="md_marquee" extra="true">
+      <default>./_arte/marq_default.png</default> 
+	  <pos>0.665 0.235</pos>
+      <origin>0 0</origin>
+      <size>0.28 0.17</size>
+	  <zIndex>20</zIndex>
+    </image> -->	
+    <imagegrid name="gamegrid">
+	<imageSource>marquee</imageSource>
+	<!-- <imageSource>image</imageSource> -->
+	  <pos>0.08 0</pos>
+      <size>0.27 1</size>
+	  <!-- <maxSize>0.37 0.574</maxSize> -->
+      <padding>0.05 0.05 0.05 0.1</padding>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>1 5</autoLayout>
+      <autoLayoutSelectedZoom>2.1</autoLayoutSelectedZoom>
+      <margin>0.008 0.04</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+	  <showVideoAtDelay>-1</showVideoAtDelay>
+    </imagegrid>
+	
+    <gridtile name="default">
+      <padding>64 16</padding>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+	  <maxSize>0.37 0.45</maxSize>
+      <imageColor>FFFFFFAA</imageColor>
+      <reflexion>0 0</reflexion>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <padding>64 16</padding>
+    </gridtile>
+    <text name="gridtile">
+      <visible>false</visible>
+      <color>80808080</color>
+      <fontSize>0.016</fontSize>
+      <size>0.5 0</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>FFFFFF00</color>
+      <fontSize>0.035</fontSize>
+      <size>0.6 0</size>
+    </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>    
   </customView>
  
 <!-- INDICADORES, HORA Y ACTIVIDAD DEL MANDO -->	
