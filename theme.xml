@@ -1341,6 +1341,14 @@ Opaque                                         Translucide                      
   </customView>
 
   <customView name="BackToThe80" inherits="grid" tinyScreen="false">
+  <helpsystem name="help">
+	<pos>2 2</pos>
+    <origin>0 0</origin>
+    <size>-0.98 1</size>
+	<alignment>left</alignment>
+    <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+    <fontSize>0.019</fontSize>	
+  </helpsystem>
 	<text name="md_name" extra="true">
       <color>ffffff</color>
       <pos>0.585 0.085</pos>
@@ -1350,13 +1358,58 @@ Opaque                                         Translucide                      
       <glowSize>4</glowSize>
       <fontSize>0.08</fontSize>
       <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
-    </text>	
+    </text>
+        <image name="menu_top" extra="true">
+      <tile>true</tile>
+      <pos>0.011 0.338</pos>
+      <origin>0 0</origin>
+      <size>0.28 0.01</size>
+      <color>282828</color>
+	  <colorEnd>60FFBF00</colorEnd>
+	  <gradientType>vertical</gradientType>
+	  <path>./_arte/bottom.png</path>
+	  <zIndex>78</zIndex>
+    </image>
+    <image name="menu_bottom" extra="true">
+      <tile>true</tile>
+      <pos>0.011 0.599</pos>
+      <origin>0 0</origin>
+      <size>0.28 0.01</size>
+      <color>60FFBF00</color>
+	  <colorEnd>282828</colorEnd>
+	  <gradientType>vertical</gradientType>
+	  <!-- <flipY>true</flipY> -->
+	  <path>./_arte/bottom.png</path>
+	  <zIndex>78</zIndex>
+    </image>
+	  <image name="bg_gamelist" extra="true">
+    <color>3a4449</color>
+    <tile>true</tile>
+    <pos>0 0</pos>
+	<colorEnd>000000B3</colorEnd>
+	<gradientType>horizontal</gradientType>
+    <origin>0 0</origin>
+    <size>0.3 1</size>
+    <zIndex>15</zIndex>
+    <path>./_arte/capa-color.png</path>
+    </image>
+	<image name="md_fanart">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <!-- <path>./_arte/1026.png</path> -->
+<!-- 	  <color>cccccc8C</color>
+	  <colorEnd>60FFBF00</colorEnd>
+	  <gradientType>vertical</gradientType> -->
+	  <zIndex>14</zIndex>
+    </image>	
     <image name="sub-background" extra="true">
       <tile>true</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>./_arte/1026.png</path>
+      <path>./_arte/1030.png</path>
 	  <color>cccccc8C</color>
 	  <colorEnd>60FFBF00</colorEnd>
 	  <gradientType>vertical</gradientType>
@@ -1422,7 +1475,7 @@ Opaque                                         Translucide                      
     <imagegrid name="gamegrid">
 	<imageSource>marquee</imageSource>
 	<!-- <imageSource>image</imageSource> -->
-	  <pos>0.08 0</pos>
+	  <pos>0.01 0</pos>
       <size>0.27 1</size>
 	  <!-- <maxSize>0.37 0.574</maxSize> -->
       <padding>0.05 0.05 0.05 0.1</padding>
@@ -1433,6 +1486,7 @@ Opaque                                         Translucide                      
       <centerSelection>true</centerSelection>
       <scrollLoop>true</scrollLoop>
 	  <showVideoAtDelay>-1</showVideoAtDelay>
+	  <zIndex>80</zIndex>
     </imagegrid>
 	
     <gridtile name="default">
